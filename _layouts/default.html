@@ -22,5 +22,10 @@
         </a>
       </div>
     </footer>
+    <script>
+      document.querySelectorAll('.alt-words').forEach(el => {
+        el.innerHTML = el.textContent.split(' ').map(word => '<span>${word}</span>').join(' ');
+      });
+    </script>
   </body>
 </html>
