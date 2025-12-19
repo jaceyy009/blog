@@ -1,3 +1,8 @@
+---
+layout: default
+title: Home
+---
+
 # ROTA Vision Blog
 Welcome to the official ROTA Vision blog website.
 
