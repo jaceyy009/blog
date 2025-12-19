@@ -53,3 +53,16 @@ p {
 .footer-links a:hover {
   text-decoration: underline;
 }
+
+.alt-words span:nth-child(odd) {
+  color: #ee220c; /* red */
+}
+
+.alt-words span:nth-child(odd) {
+  color: #00a2ff; /* blue */
+}
+
+/* Spacing so words aren't squished */
+.alt-word span {
+  margin-right: 0.25em;
+}
