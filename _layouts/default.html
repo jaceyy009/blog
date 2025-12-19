@@ -24,7 +24,11 @@
     </footer>
     <script>
       document.querySelectorAll('.alt-words').forEach(el => {
-        el.innerHTML = el.textContent.split(' ').map(word => '<span>${word}</span>').join(' ');
+        // Split the heading text into words, wrap each in a <span>, and join back
+        el.innerHTML = el.textContent
+          .split(' ')
+          .map(function(word { return '<span>' + word + '</span>'; })
+          .join(' ');
       });
     </script>
   </body>
