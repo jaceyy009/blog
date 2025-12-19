@@ -1,0 +1,55 @@
+/* Fonts */
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #222;
+  margin: 0;
+}
+
+/* Titles (h1) */
+h1 {
+  font-weight: bold;
+  font-style: italic;
+}
+
+/* headings (h2-h6) */
+h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* Paragraphs remain normal */
+p {
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Footer stylers */
+.site-footer {
+  margin-top: 2em;
+  padding: 1em 0;
+  text-alig: center;
+  font-size: 0.93m;
+  color: #555;
+  border-top: 1 px solid #ddd;
+}
+
+.footer.logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px
+  margin-bottom: 6px;
+}
+
+.footer-logos img {
+  height: 50px;
+}
+
+.footer-links a {
+  color: #005ea2;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
