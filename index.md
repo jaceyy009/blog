@@ -18,3 +18,11 @@ Welcome to the official ROTA Vision blog website.
     </a>
   </p>
 </form>
+
+<footer style="text-align:center; font-size:0.9em; color:#555;">
+  <img src="/images/ROTA-Vision-Logo.png" alt="ROTA Vision Logo" style="height:50px; margin-bottom:5px;">
+  <br>
+  © 2025 ROTA Vision • <a href="https://www.rotavision.org" target="_blank" rel="noopener noreferrer">
+    Visit ROTA Vision Website
+  </a>
+</footer>
