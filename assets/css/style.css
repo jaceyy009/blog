@@ -58,7 +58,7 @@ p {
   color: #ee220c; /* red */
 }
 
-.alt-words span:nth-child(odd) {
+.alt-words span:nth-child(even) {
   color: #00a2ff; /* blue */
 }
 
