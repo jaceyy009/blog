@@ -20,8 +20,11 @@ Welcome to the official ROTA Vision blog website.
 </form>
 
 <footer style="text-align:center; font-size:0.9em; color:#555;">
-  <img src="/themes/ROTA-Logo-2025.png" alt="ROTA Logo" style="height:50px; margin-bottom:5px;">
-  <br>
+  <div style="display:flex; justify-content:center; align-items:center; gap:12px;">
+    <img src="/themes/ROTA-Logo-2025.png" alt="ROTA Logo" style="height:50px;">
+    <img src="/themes/ROTA-Vision-Blog-Logo-2025.png" alt="ROTA Vision Blog Logo" style="height:50px;">
+  </div>
+    <br>
   © 2025 ROTA Vision • <a href="https://www.rotavision.org" target="_blank" rel="noopener noreferrer">
     Visit ROTA Vision Website
   </a>
