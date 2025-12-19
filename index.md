@@ -24,8 +24,11 @@ Welcome to the official ROTA Vision blog website.
     <img src="/themes/ROTA-Logo-2025.png" alt="ROTA Logo" style="height:50px;">
     <img src="/themes/ROTA-Vision-Blog-Logo-2025.png" alt="ROTA Vision Blog Logo" style="height:50px;">
   </div>
-    <br>
-  © 2025 ROTA Vision • <a href="https://www.rotavision.org" target="_blank" rel="noopener noreferrer">
-    Visit ROTA Vision Website
+
+  <div style="margin-top:8px; font-size:0.9em; color:#555;">
+  © 2025 ROTA Vision • 
+    <a href="https://www.rotavision.org" target="_blank" rel="noopener noreferrer">
+    Visit ROTA Vision Website <span aria-hidden="true">↗︎</span>
   </a>
+  </div>
 </footer>
