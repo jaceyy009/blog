@@ -1,9 +1,13 @@
 ---
 layout: default
-title: Home
+title: Home 
 ---
 
-# ROTA Vision Blog
+<h1 class="alt-words">
+  <span>ROTA</span>
+  <span>Vision</span>
+  <span>Blog</span>
+</h1>
 Welcome to the official ROTA Vision blog website.
 
 ## Posts
