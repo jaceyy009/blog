@@ -1,0 +1,14 @@
+<!DOCTUPE html>
+<html land-"en">
+  <head>
+    <meta  charset="UTF-8">
+    <title>{{ page.title | default: "ROTA Vision Blog" }}</title>
+    <link rel="icon" href={{ '/favicon.ico' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  </head>
+  <body>
+    {[ content }}
+
+    {% include footer.html %}
+  </body>
+</html>
