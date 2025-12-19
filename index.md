@@ -10,7 +10,9 @@ title: Home
 </h1>
 Welcome to the official ROTA Vision blog website.
 
-## Posts
+<h2>
+  <span>Posts</span>
+</h2>
 - No posts yet.
 
 <form
