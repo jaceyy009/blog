@@ -3,3 +3,18 @@ Welcome to the official ROTA Vision blog website.
 
 ## Posts
 - No posts yet.
+
+<form
+  action="https://buttondown.com/api/emails/embed-subscribe/jaceyy012"
+  method="post"
+  class="embeddable-buttondown-form"
+>
+  <label for="bd-email">Enter your email</label>
+  <input type="email" name="email" id="bd-email" />
+  <input type="submit" value="Subscribe" />
+  <p>
+    <a href="https://buttondown.com/refer/jaceyy012" target="_blank">
+      Powered by Buttondown.
+    </a>
+  </p>
+</form>
