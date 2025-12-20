@@ -12,14 +12,9 @@
     🌓
   </button>
   
-  <form class="site-search" id="searchForm" action="javascript:void(0)">
-    <input
-      type="search"
-      id="searchInput"
-      placeholder="Search ROTA Vision Blog..."
-      aria-label="Search site"
-      autocpmlete="off"
-      >
-    <div id="searchResults"></div>
+  <form action="https://www.google.com/search" method="get" target="_blank" class="site-search">
+    <input type="search" name="q" placeholder="Search..." required>
+    <input type="hidden" name="sitesearch" value="blog.rotavision.org">
+    <button type="submit>Search</button>
   </form>
 </header>
