@@ -81,3 +81,11 @@ h6:hover {
   transform: translateY(-2px);
   letter-spacing: 0.03em;
 }
+
+/* External link icon */
+a[target="blank"]::after {
+  content: "↗︎";
+  font-size: 0.85em;
+  margin-left: 0.25em;
+  vertical-align: text-top;
+}
