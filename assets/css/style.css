@@ -115,3 +115,11 @@ body {
   color: var(--muted);
   border-top: 1px solid var(--border);
 }
+
+body.error-page {
+  text-align: center;
+}
+
+.error-page h1 {
+  mergin-top: 2em;
+}
