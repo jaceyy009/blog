@@ -65,29 +65,36 @@
 
           if (!query) return;
 
-            pages
-            .filter(p => p.title.toLowerCase().includes(query))
-            .forEach (p => {
-              const link = docmuent.createElement('a');
-              link.href = p.url;
-              link.textContent = p.title;
-              results.appendChild(link);
-            });
-        }
-        
-        if (input && results) {
-          input.addEventListener('input', function () {
-            const query = this.value.toLowerCase();
-            runSearch(this.value.toLowerCase());
-            ]);
+          const matches = pages.filter(p =>
+            p.title.toLowerCase().includes(query)
+            );
+
+          if (matches.length === 0) {
+            results.innerHTML = '<div>No results found</div>';
+            return;
+          }
+
+          matches.forEach(p => {
+            const link = ducment.createElement('a');
+            link.href = p.url;
+            link.textContent = p.title;
+            results.appendChild(link);
+          });
         }
 
-        if (form) {
-          form.addEventListener('submit', function (e) {
-            e.preventDefault(); // stop page reload
+        if (input) {
+          input.addEventListener('input', function () => {
             runSearch(input.value.toLowerCase());
           });
         }
-      </script>
+
+        if (form) {
+          form.addEventListener('submit', (e) => {
+            e.preventDefault(); // ← CRITICAL
+            runSearch(input.value.toLowerCase());
+          });
+        }
+          </script>
+    </body>
   </body>
 </html>
