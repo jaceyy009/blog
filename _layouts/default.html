@@ -12,16 +12,6 @@
     {{ content }}
 
     {% include footer.html %}
-
-    <!-- Auto-update footer year -->
-    <script>
-      document.addEventListener('DOMContentLoaded', function () {
-        const yearEl = document.getElementById('year');
-        if (yearEl) {
-          yearEl.textContent = new Date().getFullYear();
-        }
-      });
-    </script>
     
     <script>
       document.querySelectorAll('.alt-words').forEach(el => {
@@ -95,6 +85,29 @@
           });
         }
           </script>
+
+      <script>
+        document.addEventListener('DOMContentLoaded', function () {
+          // --- Auto year ---
+          const yearEl = document.getElementById('year');
+          if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+          // --- Auto version ---
+          // Fallback if GitHub metadata isn't available
+          let version = "1.0.0";
+
+          // Attempt to use GitHub release tag if available
+          if (typeof site !== "undefined" &&
+              site.github &&
+              site.github.release &&
+              site.github.release.tag_name) {
+            version = site.github.release.tag_name;
+          }
+
+          const versionEl = document.getElementById('version');
+          if (versionEl) versionEl.textContent = version;
+        });
+      </script>
     </body>
   </body>
 </html>
