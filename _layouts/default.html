@@ -56,15 +56,14 @@
           { title: "Contact", url: "/contact/" }
           ];
 
+        const form = document.getElementById('searchForm');
         const input = document.getElementById('searchInput');
         const results = document.getElementById('searchResults');
 
-        if (input && results) {
-          input.addEventListener('input', function () {
-            const query = this.value.toLowerCase();
-            results.innerHTML = '';
+        function runSearch(query) {
+          results.innerHTML = '';
 
-            if (!query) return;
+          if (!query) return;
 
             pages
             .filter(p => p.title.toLowerCase().includes(query))
@@ -74,6 +73,19 @@
               link.textContent = p.title;
               results.appendChild(link);
             });
+        }
+        
+        if (input && results) {
+          input.addEventListener('input', function () {
+            const query = this.value.toLowerCase();
+            runSearch(this.value.toLowerCase());
+            ]);
+        }
+
+        if (form) {
+          form.addEventListener('submit', function (e) {
+            e.preventDefault(); // stop page reload
+            runSearch(input.value.toLowerCase());
           });
         }
       </script>
