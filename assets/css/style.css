@@ -123,3 +123,35 @@ body.error-page {
 .error-page h1 {
   mergin-top: 2em;
 }
+
+.site-search {
+  max-width: 400px;
+  margin: 2em auto;
+  text-align: center;
+}
+
+.site-search input {
+  width: 100%;
+  padding: 0.6em 0.8em;
+  font-size: 1em;
+  border: 1px solid var(--border, #ccc);
+  border-radius: 6px;
+  background: var(--bg, #fff);
+  color: var(--text,, #000);
+}
+
+#searchResults {
+  margin-top: 0.75em;
+  text-align: left;
+}
+
+#searchResults a {
+  display: block;
+  padding: 0.4em 0;
+  color: #005ea2;
+  text-decoration: none;
+}
+
+#searchResults a:hover {
+  text-decoration: underline;
+}
