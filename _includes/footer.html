@@ -9,5 +9,6 @@
     <a href="https://www.rotavision.org" target="_blank" rel="noopener noreffer">
       Visit ROTA Vision Website <span aria-hidden="true">&#x2197;</span>
     </a>
+     • v{{ site.github.release.tag_name | default: site.github.sha | slice: 0,7 }}
   </div>
 </footer>
