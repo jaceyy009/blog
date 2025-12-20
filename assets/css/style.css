@@ -89,3 +89,29 @@ a[target="blank"]::after {
   margin-left: 0.25em;
   vertical-align: text-top;
 }
+
+/* Default (light mode) */
+:root {
+  --bg: #ffffff;
+  --text: #1a1a1a;
+  --muted: #666;
+  --border: #ddd;
+}
+
+/* Dark mode */
+[data-theme="dark"] {
+  --bg: #0f1115;
+  --text: #e6e6e6;
+  --muted: #aaa;
+  --border: #333;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+}
+
+.site-footer {
+  color: var(--muted);
+  border-top: 1px solid var(--border);
+}
