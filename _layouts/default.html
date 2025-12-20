@@ -93,20 +93,11 @@
           const yearEl = document.getElementById('year');
           if (yearEl) yearEl.textContent = new Date().getFullYear();
 
-          // --- Auto version ---
-          // Fallback if GitHub metadata isn't available
-          let version = "1.0.0";
-
-          // Attempt to use GitHub release tag if available
-          if (typeof site !== "undefined" &&
-              site.github &&
-              site.github.release &&
-              site.github.release.tag_name) {
-            version = site.github.release.tag_name;
-          }
-
+          // Use short GitHub SHA as proxy for commit count
+          const sha = "{{ site.github.build_revision | slice: 0,7 }}"; // e.g., "1b51abf"
+          let versionNumber = parseInt(sha, 16); // convert hex to decimal
           const versionEl = document.getElementById('version');
-          if (versionEl) versionEl.textContent = version;
+          if (versionEl) versionEl.textContent = versionNumber;
         });
       </script>
     </body>
