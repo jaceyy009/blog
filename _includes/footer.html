@@ -9,6 +9,19 @@
     <a href="https://www.rotavision.org" target="_blank" rel="noopener noreffer">
       Visit ROTA Vision Website <span aria-hidden="true">&#x2197;</span>
     </a>
-     • v1.0.{{ site.data.version.current }}
+     • v1.0.<span id="version"></span>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        const yearEl = document.getElementById('year');
+        if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+        // Use short GitHub SHA as proxy for commit count
+        const sha = "{{ site.github.build_revision | slice: 0,7 }}";
+        let versionNumber = parseInt(sha, 16); // convert hex to decimal
+        const versionEl = document.getElementById('version');
+        if (versionEl) versionEl.textContent = versionNumber;
+      });
+    </script>
   </div>
 </footer>
