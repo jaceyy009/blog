@@ -9,19 +9,14 @@
   <body>
     {{ content }}
 
-    <footer style="text-align:center; font-size:0.9em; color:#555; margin-top:2em;">
-      <div class="footer-logos">
-        <img src="/themes/ROTA-Logo-2025.png" alt="ROTA Logo" style="height:50px;">
-        <img src="/themes/ROTA-Vision-Blog-Logo-2025.png" alt="ROTA Vision Blog Logo" style="height:50px;">
-      </div>
+    {% include footer.html %}
 
-      <div class="footer-links">
-        © 2025 ROTA Vision •
-        <a href="https://www.rotavision.org" target="_blank" rel="noopener noreffer">
-        Visit ROTA Vision Website <span aria-hidden="true">&#x2197;</span>
-        </a>
-      </div>
-    </footer>
+    <!-- Auto-update footer year -->
+    <script>
+      document.getElementById('year').textContent =
+        new date().getFullYear();
+    </script>
+    
     <script>
       document.querySelectorAll('.alt-words').forEach(el => {
         // Split the heading text into words, wrap each in a <span>, and join back
