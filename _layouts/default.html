@@ -49,5 +49,33 @@
     </script>
 
     <body class="{{ page.body_class }}">
+
+      <script>
+        const pages = [
+          { title: "Home", url: "/" },
+          { title: "Contact", url: "/contact/" }
+          ];
+
+        const input = document.getElementById('searchInput');
+        const results = document.getElementById('searchResults');
+
+        if (input && results) {
+          input.addEventListener('input', function () {
+            const query = this.value.toLowerCase();
+            results.innerHTML = '';
+
+            if (!query) return;
+
+            pages
+            .filter(p => p.title.toLowerCase().includes(query))
+            .forEach (p => {
+              const link = docmuent.createElement('a');
+              link.href = p.url;
+              link.textContent = p.title;
+              results.appendChild(link);
+            });
+          });
+        }
+      </script>
   </body>
 </html>
